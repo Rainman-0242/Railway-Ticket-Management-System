@@ -1,0 +1,32 @@
+.main-navigation ul li a {
+    padding: 6px 15px;
+}
+
+.learn-nav:hover .learn-nav-icon-black {
+    display:none;
+}
+
+.learn-nav-icon-white {
+    display: none;
+}
+
+.current .learn-nav-icon-white {
+    display:inline !important;
+}
+
+.current .learn-nav-icon-black {
+    display:none;
+}
+
+.learn-nav:hover .learn-nav-icon-white {
+    display:inline !important;
+}
+
+@media screen and (max-width: 767px){
+    .learn-nav-icon-white {
+        display: inline;
+    }
+    .learn-nav-icon-black {
+        display: none;
+    }
+}

@@ -1,0 +1,488 @@
+img.refer-cross-icon {
+		position: absolute;
+		background: white;
+		border-radius: 50%;
+		padding: 10px;
+		box-sizing: content-box;
+		top: -20px;
+		right: -20px;
+		cursor: pointer;
+	}
+
+	.popup-img {
+		position: fixed;
+		z-index: 999999;
+		width: 100%;
+		left: 0;
+		right: 0;
+		background: #00000094;
+		text-align: center;
+		height: 100vh;
+		overflow: hidden;
+	}
+
+	.popup-img .banner-container {
+		position: relative;
+		top: 50px;
+		height: 70vh;
+		display: inline-block;
+	}
+
+	.popup-img .banner-container img.banner-pop {
+		height: 100%;
+	}
+
+	.popup-img.hide-pop {
+		display: none;
+	}
+
+	.show-mobile {
+		display: none;
+	}
+
+	.book-now-button {
+		display: inherit;
+		padding: 20px 40px;
+
+		background-color: #96089d;
+		color: #fff;
+		/* White text color */
+		text-decoration: none;
+		text-align: center;
+		border-radius: 10px;
+		font-size: 32px;
+		border: none;
+		cursor: pointer;
+		transition: background-color 0.3s;
+	}
+
+	/* Change background color on hover */
+	.book-now-button:hover {
+		background-color: #e2e1e2;
+		/* Darker blue color */
+
+	}
+
+	@media all and (max-width: 767px) {
+		.show-desktop {
+			display: none;
+		}
+
+		.show-mobile {
+			display: block;
+		}
+
+		.popup-img .banner-container img.banner-pop {
+			height: auto;
+		}
+
+		.popup-img .banner-container {
+			top: 50px;
+			width: 80%;
+			object-fit: cover;
+		}
+
+	}
+
+	.hero-image div.slider-content {
+		background-image: url(assets/images/banner2.webp);
+	}
+
+	.bottomsheet-wrapper {
+		position: fixed;
+		width: 100%;
+		height: auto;
+		bottom: 0;
+		background: transparent;
+		box-shadow: 0 0 5px #CCC;
+		padding: 16px 60px 0;
+		opacity: 0;
+		z-index: 100;
+	}
+
+	.bottomsheet-content img {
+		max-width: 100%;
+		height: auto;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.close-buttomsheet-btn {
+		display: block;
+		width: 50px;
+		height: 46px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		color: red;
+		font-size: 22px;
+		border: 0;
+		background-color: transparent;
+	}
+
+	.bottomsheet-placeholder {
+		height: auto;
+		overflow: hidden;
+		width: 100%;
+	}
+.truck-nav:hover .truck-nav-icon-black {
+		display: none !important;
+	}
+
+	.truck-nav-icon-white {
+		display: none;
+	}
+
+	.current .truck-nav-icon-white {
+		display: inline !important;
+	}
+
+	.truck-nav:hover .truck-nav-icon-white {
+		display: inline !important;
+	}
+
+	@media screen and (max-width: 767px) {
+		.truck-nav-icon-white {
+			display: inline;
+		}
+
+		.truck-nav-icon-black {
+			display: none;
+		}
+	}
+
+	/* train class assets/css */
+	.owl-carousel .owl-item {
+		padding-right: 8px !important;
+	}
+
+	.text-success {
+		color: #763c6a;
+	}
+
+	.text-danger {
+		color: #a94442;
+	}
+
+	.text-muted {
+		color: #999;
+	}
+
+	.text-primary {
+		color: #428bca;
+	}
+
+	.has-error .help-block,
+	.has-error .control-label,
+	.has-error .radio,
+	.has-error .checkbox,
+	.has-error .radio-inline,
+	.has-error .checkbox-inline {
+		color: #a94442;
+		font-size: 12pt;
+		margin-bottom: 0px;
+	}
+
+	.has-error input,
+	.has-error select,
+	.has-error textarea {
+		border-color: #a94442;
+		-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+		box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	}
+
+	.has-error input:focus,
+	.has-error select:focus,
+	.has-error textarea:focus {
+		border-color: #843534;
+		-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+		box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+	}
+
+	.alert {
+		padding: 15px;
+		margin-bottom: 20px;
+		border: 1px solid transparent;
+		border-radius: 4px;
+	}
+
+	.alert h4 {
+		margin-top: 0;
+		color: inherit;
+	}
+
+	.alert .alert-link {
+		font-weight: bold;
+	}
+
+	.alert>p,
+	.alert>ul {
+		margin-bottom: 0;
+	}
+
+	.alert>p+p {
+		margin-top: 5px;
+	}
+
+	.alert-dismissable {
+		padding-right: 35px;
+	}
+
+	.alert-dismissable .close {
+		position: relative;
+		top: -2px;
+		right: -21px;
+		color: inherit;
+	}
+
+	.alert-success {
+		color: #3c763d;
+		background-color: #dff0d8;
+		border-color: #d6e9c6;
+	}
+
+	.alert-success hr {
+		border-top-color: #c9e2b3;
+	}
+
+	.alert-success .alert-link {
+		color: #34192c;
+	}
+
+	.alert-info {
+		color: #31708f;
+		background-color: #d9edf7;
+		border-color: #bce8f1;
+	}
+
+	.alert-info hr {
+		border-top-color: #a6e1ec;
+	}
+
+	.alert-info .alert-link {
+		color: #245269;
+	}
+
+	.alert-warning {
+		color: #8a6d3b;
+		background-color: #fcf8e3;
+		border-color: #faebcc;
+	}
+
+	.alert-warning hr {
+		border-top-color: #f7e1b5;
+	}
+
+	.alert-warning .alert-link {
+		color: #66512c;
+	}
+
+	.alert-danger {
+		color: #a94442;
+		background-color: #f2dede;
+		border-color: #ebccd1;
+	}
+
+	.alert-danger hr {
+		border-top-color: #e4b9c0;
+	}
+
+	.alert-danger .alert-link {
+		color: #843534;
+	}
+
+	.hide {
+		display: none !important;
+	}
+
+	.user-dropdown-railway {
+		position: relative;
+	}
+
+	.user-dropdown-railway a i {
+		font-size: 12px;
+	}
+
+	.user-dropdown-railway a .fa-chevron-up {
+		display: none;
+	}
+
+	.user-dropdown-railway .user-related-links .single-url a {
+		border-bottom: 0 !important;
+		display: flex !important;
+		align-items: center;
+		column-gap: 15px;
+		font-family: 'Bw Helder';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px !important;
+		color: #6E6E6E !important;
+		padding: 10px 20px !important;
+		height: auto;
+	}
+
+	.user-dropdown-railway .user-related-links .single-url a>i {
+		flex-basis: 16px;
+		font-size: 16px;
+		text-align: center;
+	}
+
+	.user-dropdown-submenu {
+		position: absolute;
+		width: 274px;
+		height: auto;
+		text-align: left;
+		top: 100%;
+		right: 0;
+		display: none;
+		background: #FFFFFF;
+		box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+		border-radius: 4px;
+		z-index: 100;
+		padding: 20px 0 0;
+	}
+
+	p.drop-title-user {
+		font-family: 'Bw Helder';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 22px;
+		color: #001529;
+		margin: 0 0 24px;
+		padding: 0 20px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.dropdown-user-info {
+		display: flex;
+		padding: 0 20px;
+		align-items: center;
+		font-family: 'Bw Helder';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 22px;
+		color: #6E6E6E;
+		column-gap: 15px;
+		height: auto;
+		margin-bottom: 20px;
+	}
+
+	.dropdown-user-info span {
+		word-break: break-word;
+	}
+
+	.dropdown-user-info i {
+		flex-basis: 16px;
+		text-align: center;
+	}
+
+	.dropdown-user-info i.fa-envelope {
+		font-size: 16px;
+	}
+
+	.dropdown-user-info i.fa-mobile {
+		font-size: 28px;
+	}
+
+	.user-dropdown-divider {
+		height: 1px;
+		background: #CCC;
+		margin-bottom: 20px;
+	}
+
+	.user-dropdown-submenu .user-related-links .single-url {
+		display: block;
+		margin-bottom: 20px;
+		height: 22px;
+	}
+
+	.user-dropdown-submenu .user-related-links .single-url>a:hover,
+	.user-dropdown-submenu .user-related-links .single-url>a.current {
+		border-bottom-color: transparent !important;
+		color: #fff !important;
+	}
+
+	.RailWayEasy-main-navigation {
+		margin-left: 50px;
+		width: calc(100% - 291px);
+	}
+
+	ul.nav-list-RailWayEasy {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		margin-top: 5px;
+	}
+
+	@media (max-width: 991px) {
+		.mean-nav ul li ol {
+			padding: 0;
+		}
+
+		.user-dropdown-submenu {
+			width: 100%;
+			padding: 20px 0;
+		}
+
+		.dropdown-user-info,
+		.user-dropdown-railway .user-related-links .single-url a,
+		p.drop-title-user {
+			padding: 0 5% !important;
+		}
+
+		.mean-container .mean-nav ul li.mean-last .railway-logged-user {
+			width: 100%;
+			color: #FFF !important;
+			padding: 1em 10% !important;
+			border-left: 0 !important;
+			border-bottom: 0 !important;
+			border-radius: 0 !important;
+			border-top: 1px solid rgba(255, 255, 255, .5) !important;
+			background-color: #96089d !important;
+		}
+
+		.user-dropdown-railway a .fa-chevron-up,
+		.user-dropdown-railway a .fa-chevron-down {
+			position: absolute;
+			right: 20px;
+		}
+
+		.user-dropdown-railway a:hover .fa-chevron-down {
+			display: none;
+		}
+
+		ul.nav-list-RailWayEasy {
+			display: block;
+		}
+	}
+
+	/* Train Link */
+	.train-icon {
+		width: 20px;
+		position: relative;
+		top: -4px;
+	}
+
+	.train-link:hover .train-icon {
+		display: none;
+	}
+
+	.train-link .train-icon-white {
+		display: none;
+	}
+
+	.train-link:hover .train-icon-white,
+	.current .train-icon-white {
+		display: inline !important;
+	}
+
+	.mean-nav .train-icon {
+		display: none !important;
+	}
+
+	.mean-nav .train-icon.train-icon-white {
+		display: inline !important;
+	}
